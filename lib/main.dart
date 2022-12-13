@@ -518,7 +518,7 @@ void main() {
 
 
 ----------------------------------------------task11--------------------------------------
-        / import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
  void main()
  {
@@ -556,4 +556,50 @@ void main() {
      )
    );
  }
+--------------------------------------task12-----------------------------
+        
+        
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Custom Button 12",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2)),
+          backgroundColor: Colors.purple,
+        ),
+        body: Center(
+          child: Container(
+            alignment: Alignment.center,
+            child: Text("admin",
+                style: TextStyle(color: Colors.black45, fontSize: 50)),
+            height: 80,
+            width: 250,
+            decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.purpleAccent,
+                      offset: Offset(10, 10),
+                      spreadRadius: -10,
+                      blurStyle: BlurStyle.normal,
+                      blurRadius: 35)
+                ],
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50)),
+                gradient: LinearGradient(
+                    colors: [Colors.purple, Colors.purpleAccent])),
+          ),
+        ),
+      ),
+    ),
+  ),
+    );
+}
 
