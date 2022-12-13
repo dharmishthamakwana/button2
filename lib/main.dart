@@ -365,3 +365,51 @@ void main()
       )
   );
 }
+
+
+-----------------------------------task9-------------------------------------
+        
+        
+        
+        import 'package:flutter/material.dart';
+void main()
+{
+  int i=0;
+  runApp(
+      MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: SafeArea(
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text("Custom Button 9"),
+            ),
+            body: Center(
+              child: GestureDetector(
+                onTap: (){
+                  i++;
+                  print("$i");
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  child: Icon(Icons.settings,color: Colors.white70,size: 50),
+                  height: 50,
+                  width: 50,
+                  color: Colors.blue,
+
+                  // decoration: BoxDecoration(
+                  //      borderRadius: BorderRadius.all(Radius.circular(50)),
+                  //      gradient: LinearGradient(
+                  //          colors: [
+                  //            Colors.amber,
+                  //            Colors.amber.shade200,
+                  //          ]
+                  //      )
+                  //  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      )
+  );
+}
