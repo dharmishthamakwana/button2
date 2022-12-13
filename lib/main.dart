@@ -413,3 +413,49 @@ void main()
       )
   );
 }
+
+
+
+
+------------------------------------task10-----------------------------------
+        import 'package:flutter/material.dart';
+
+void main() {
+  int i = 0;
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Custom Button 10"),
+        ),
+        body: Center(
+          child: GestureDetector(
+            onTap: () {
+              i++;
+              print("$i");
+            },
+            child: Container(
+              alignment: Alignment.center,
+              child: Icon(Icons.warning_amber, color: Colors.white70, size: 35),
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+
+              // decoration: BoxDecoration(
+              //      borderRadius: BorderRadius.all(Radius.circular(50)),
+              //      gradient: LinearGradient(
+              //          colors: [
+              //            Colors.amber,
+              //            Colors.amber.shade200,
+              //          ]
+              //      )
+              //  ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ));
+}
+
