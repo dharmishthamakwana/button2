@@ -514,3 +514,46 @@ void main() {
   ),
   );
 }
+
+
+
+----------------------------------------------task--------------------------------------
+        / import 'package:flutter/material.dart';
+//
+// void main()
+// {
+//   runApp(
+//     MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: SafeArea(
+//         child: Scaffold(
+//           appBar: AppBar(
+//             title: Text("Custom Button 7",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,letterSpacing: 2)),
+//             backgroundColor: Colors.yellow,
+//           ),
+//           body: Center(
+//             child: Container(
+//               alignment: Alignment.center,
+//               child: Text("Hasti",style: TextStyle(color: Colors.black45,fontSize: 50)),
+//               height: 80,
+//               width: 250,
+//               decoration: BoxDecoration(
+//                 boxShadow: [
+//                   BoxShadow(color: Colors.amberAccent,offset: Offset(10,10),spreadRadius: -10,blurStyle: BlurStyle.normal,blurRadius: 35)
+//                 ],
+//                 borderRadius: BorderRadius.only(topLeft: Radius.circular(50),bottomRight: Radius.circular(50)),
+//                 gradient: LinearGradient(
+//                   colors: [
+//                     Colors.yellowAccent,
+//                     Colors.amberAccent
+//                   ]
+//                 )
+//               ),
+//             ),
+//           ),
+//         ),
+//       ),
+//     )
+//   );
+// }
+
