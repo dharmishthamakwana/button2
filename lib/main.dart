@@ -603,3 +603,39 @@ void main() {
     );
 }
 
+-------------------------task13--------------------------
+        import 'package:flutter/material.dart';
+
+ void main()
+ {
+   runApp(
+       MaterialApp(
+         debugShowCheckedModeBanner: false,
+         home: SafeArea(
+           child: Scaffold(
+             appBar: AppBar(
+               backgroundColor: Colors.pink,
+               title: Text("Custom Button 13"),
+            ),
+             body: Center(
+               child: Container(
+                 alignment: Alignment.center,
+                 child: Text("  admin",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold)) ,
+                 height: 65,
+                 width: 150,
+                 decoration: BoxDecoration(
+                     gradient: LinearGradient(
+                         colors: [
+                           Colors.pink,
+                           Colors.redAccent,
+                         ]
+                     ),
+                   borderRadius: BorderRadius.all(Radius.circular(30))
+                 ),
+               ),
+             ),
+           ),
+         ),
+       )
+   );
+ }
