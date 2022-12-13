@@ -639,3 +639,43 @@ void main() {
        )
    );
  }
+---------------------------task14------------------------------
+        import 'package:flutter/material.dart';
+
+ void main()
+{
+   runApp(
+       MaterialApp(
+        debugShowCheckedModeBanner: false,
+         home: SafeArea(
+           child: Scaffold(
+             appBar: AppBar(
+               backgroundColor: Colors.blueGrey,
+               title: Text("Custom Button 14"),
+             ),
+             body: Center(
+               child: Container(
+                alignment: Alignment.center,
+                 child: Icon(
+                   Icons.account_balance,
+                   color: Colors.white,
+                   size: 40,
+                 ),
+                 height: 80,
+                 width: 100,
+                 decoration: BoxDecoration(
+                     borderRadius: BorderRadius.all(Radius.circular(30)),
+                     gradient: LinearGradient(
+                         colors: [
+                           Colors.grey,
+                           Colors.blueGrey,
+                         ]
+                     )
+                 ),
+               ),
+             ),
+           ),
+         ),
+       )
+   );
+ }
