@@ -459,3 +459,58 @@ void main() {
   ));
 }
 
+
+------------------------------task11---------------------------------------
+        import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Custom Button 11",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2)),
+          backgroundColor: Colors.blue,
+        ),
+        body: Center(
+          child: Container(
+            alignment: Alignment.center,
+            child: Text("f",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold)),
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+                border: Border.all(
+                    color: Colors.black12,
+                    style: BorderStyle.solid,
+                    width: 10,
+                    strokeAlign: StrokeAlign.outside),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black,
+                      offset: Offset(10, 10),
+                      spreadRadius: -10,
+                      blurStyle: BlurStyle.normal,
+                      blurRadius: 35)
+                ],
+                shape: BoxShape.circle,
+                gradient: LinearGradient(colors: [
+                  Colors.blueAccent,
+                  Colors.lightBlueAccent,
+                ],
+               ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  );
+}
